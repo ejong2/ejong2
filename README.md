@@ -1,4 +1,4 @@
-#Hi I'm ejong2👋
+# I'm ejong2👋
 
 <!--
 **ejong2/ejong2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
