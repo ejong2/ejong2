@@ -13,12 +13,14 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ejong2&layout=compact"/>
 <br></br>
 <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-d6912d?style=flat-square&logo=Python&logoColor=Blue"/>
 
 
 ## <b> 🛠 Tools</b>
 <img src="https://img.shields.io/badge/MySql-d6912d?style=flat-square&logo=MySql&logoColor=white"/>  
 <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat-square&logo=Visual Studio&logoColor=white"/>  
 <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>  
+<img src="https://img.shields.io/badge/UnrealEngine-000000?style=flat-square&logo=UnrealEngine&logoColor=white"/>  
 
 
 ## <b> 😃 Me</b>
