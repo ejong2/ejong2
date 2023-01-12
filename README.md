@@ -3,7 +3,7 @@
 <div align="center">
   <h1>🦈Stats</h1>
   <p align="center">
-  <a href="https://github.com/Tmdhoon2/github-readme-stats">
+  <a href="https://github.com/ejong2/github-readme-stats">
 <img src="https://github-readme-stats.vercel.app/api?username=ejong2&show_icons=true&theme=jolly">
     
   </a>
@@ -13,7 +13,7 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ejong2&layout=compact"/>
 <br></br>
 <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-d6912d?style=flat-square&logo=Python&logoColor=Blue"/>
+<img src="https://img.shields.io/badge/Java-d6912d?style=flat-square&logo=Java&logoColor=white"/>
 
 
 ## <b> 🛠 Tools</b>
