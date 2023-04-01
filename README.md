@@ -6,7 +6,7 @@
 
  <h1>💬 About Me</h1>
 
- 🌱 안녕하세요! 저는 백엔드 개발자 *이혜창*입니다 😄 <br/>
+ 🌱 안녕하세요! 저는 백엔드 개발자 **이혜창**입니다 😄 <br/>
 [📄**MY PORTFOLIO**](https://www.notion.so/enamu-namu/like-a-tree-c65455f2d11d4767ae9de0a060a72334?pvs=4) <br />
 
 <h3 align='center'>💻 Skill</h3>
