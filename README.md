@@ -29,10 +29,13 @@
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white"/>
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/>
 
- <h3 align='center'>📚 Learning</h3>
+<h3 align='center'>📚 학습</h3>
     <p align='center'>
-   <img src="https://img.shields.io/badge/Assembly-007ACC?style=flat-square&logo=assemblyscript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Assembly-007ACC?style=flat-square&logo=assemblyscript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white"/>
+  <img src="https://img.shields.io/badge/.NET%20Core-512BD4?style=flat-square&logo=.net&logoColor=white"/>
   <img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=flat-square&logo=Amazon-AWS&logoColor=white"/>
+
 
 <h3 align='center'>😃 Me</h3>
 <p align='center'>
