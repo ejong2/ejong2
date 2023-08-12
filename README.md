@@ -22,3 +22,5 @@
 ## 🌟 Technologies & Tools
 
 <img src="https://img.shields.io/badge/-C++-black?style=flat&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-C%23%20-black?style=flat&logo=C%20Sharp"/> <img src="https://img.shields.io/badge/unreal%20engine%20-%23313131.svg?&style=flat&logo=unreal%20engine&logoColor=white"/> <img src="https://img.shields.io/badge/unity%20-%23000000.svg?&style=flat&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/-JAVA-red?style=flat&logo=java"/> <img src="https://img.shields.io/badge/Spring%20Boot-green?style=flat&logo=spring-boot"/> <img src="https://img.shields.io/badge/MySQL-blue?style=flat&logo=mysql"/> <img src="https://img.shields.io/badge/.Net%20Core-purple?style=flat&logo=.net"/>
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ejong2&show_icons=true&theme=radical)
