@@ -7,7 +7,7 @@
 
 📬 **About Me** :
 
-<a href="mailto:guyus5594@gmail.com">
+<a href="mailto:nyamuniv@gmail.com">
     <img src="https://img.shields.io/badge/EMAIL-red?&style=flat&logo=gmail&logoColor=white" style="height : auto; margin-right : 2px;"/>
 </a><br/>
 
