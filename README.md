@@ -1,49 +1,26 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="github-markdown.css">
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&reversal=true&color=timeGradient&height=300&section=header&text=HyeChang😊%20&fontSize=90"/>
-<div align="center">
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fejong2&count_bg=%23FFC500&title_bg=%23555555&icon=diaspora.svg&icon_color=%23FFDD00&title=visitors&edge_flat=false)
 
- <h1>💬 About Me</h1>
+## 🌱 🌌 🐱 
 
- 🌱 안녕하세요! 저는 서버 개발자 **이혜창**입니다 😄 <br/>
-[📄**MY PORTFOLIO**](https://www.notion.so/enamu-namu/like-a-tree-c65455f2d11d4767ae9de0a060a72334?pvs=4) <br />
-
-<h3 align='center'>💻 Skill</h3>
-<p align='center'>
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white"/>
-<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white"/>
-<img src="https://img.shields.io/badge/UnrealEngine-000000?style=flat-square&logo=UnrealEngine&logoColor=white"/>  
-
-<br/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>
-<img src="https://img.shields.io/badge/Java-007396?style=flat&logo=OpenJDK&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
-
-<h3 align='center'>🛠️ Tools</h3>
-<p align='center'>
-<img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=flat-square&logo=Visual-Studio&logoColor=white"/>
-<img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat-square&logo=IntelliJ-IDEA&logoColor=white"/>
-<img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/>
-<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white"/>
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/>
-
-<h3 align='center'>📚 학습</h3>
-    <p align='center'>
-  <img src="https://img.shields.io/badge/Assembly-007ACC?style=flat-square&logo=assemblyscript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/.NET%20Core-512BD4?style=flat-square&logo=.net&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=flat-square&logo=Amazon-AWS&logoColor=white"/>
+ 나무랑 우주 고양이가 좋은 개발자 
 
 
-<h3 align='center'>😃 Me</h3>
-<p align='center'>
- <a href="https://velog.io/@enamu"> 
-    <img src="https://img.shields.io/badge/ejong2-1FBF90?style=flat-square&logo=velog&logoColor=white"/>
- </a>
-  <a href="https://www.notion.so/enamu-namu/like-a-Tree-c65455f2d11d4767ae9de0a060a72334"> 
-    <img src="https://img.shields.io/badge/ejong2-000000?style=flat-square&logo=notion&logoColor=white"/>
- </a>
-<img src="https://img.shields.io/badge/guyus5594@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"/>
-</div>
+📬 **About Me** :
+
+<a href="mailto:guyus5594@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-red?&style=flat&logo=gmail&logoColor=white" style="height : auto; margin-right : 2px;"/>
+</a><br/>
+
+<a href="https://velog.io/@enamu">
+    <img src="https://img.shields.io/badge/MY%20BLOG-yellow?&style=flat&logo=github&logoColor=black" style="height : auto; margin-right : 2px;"/>
+</a><br/>
+
+<a href="https://enamu-namu.notion.site/c65455f2d11d4767ae9de0a060a72334?pvs=4">
+    <img src="https://img.shields.io/badge/PORTFOLIO-blue?&style=flat&logo=notion&logoColor=white" style="height : auto; margin-right : 2px;"/>
+</a>
+
+## 🌟 Technologies & Tools
+
+<img src="https://img.shields.io/badge/-C++-black?style=flat&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-C%23%20-black?style=flat&logo=C%20Sharp"/> <img src="https://img.shields.io/badge/unreal%20engine%20-%23313131.svg?&style=flat&logo=unreal%20engine&logoColor=white"/> <img src="https://img.shields.io/badge/unity%20-%23000000.svg?&style=flat&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/-JAVA-red?style=flat&logo=java"/> <img src="https://img.shields.io/badge/Spring%20Boot-green?style=flat&logo=spring-boot"/> <img src="https://img.shields.io/badge/MySQL-blue?style=flat&logo=mysql"/> <img src="https://img.shields.io/badge/.Net%20Core-purple?style=flat&logo=.net"/>
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ejong2&show_icons=true&theme=radical)
