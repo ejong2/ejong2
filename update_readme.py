@@ -37,7 +37,7 @@ def update_readme(post):
 
     # 삽입할 블로그 포스트 내용 작성
     if post:  # 포스트가 있을 경우
-        blog_post_content = f"<a href='{post['url']}'>\n    <img src='{post['thumbnail']}' alt='{post['title']}'/>\n</a><br/>\n"
+        blog_post_content = f"<a href='{post['url']}'>\n    <img src='{post['thumbnail']}' alt='{post['title']}' width='300'/>\n</a><br/>\n"
     else:  # 포스트가 없을 경우 대체할 내용
         blog_post_content = "최신 블로그 포스트가 없습니다. 나중에 다시 확인해주세요!\n"
 
