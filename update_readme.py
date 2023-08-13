@@ -8,7 +8,7 @@ def fetch_latest_post():
 
     # 최신 포스트의 정보를 추출합니다.
     latest_post = {}
-    latest_post_section = soup.find('h1') # 최신 포스트의 제목을 담고 있는 h1 태그를 찾습니다.
+    latest_post_section = soup.find('h2')  # 최신 포스트의 제목을 담고 있는 h2 태그를 찾습니다.
     latest_post['title'] = latest_post_section.text
 
     # 최신 포스트의 URL을 찾습니다. URL은 h1 태그의 부모 div 태그 내의 a 태그의 href 속성에 있습니다.
