@@ -1,11 +1,18 @@
 import requests
+from bs4 import BeautifulSoup
 
 def fetch_latest_post():
     url = 'https://velog.io/@enamu'
     response = requests.get(url)
-    # 여기에 JSON 응답에서 필요한 데이터를 추출하는 코드를 작성
-    # 예제 응답을 참조하여 적절한 코드를 작성하세요
-    latest_post = response.json()['latest_post']
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    # 최신 포스트의 정보를 추출합니다.
+    latest_post = {}
+    latest_post_section = soup.find('div', {'class': 'sc-12sw3o5-4'}) # 적절한 클래스나 태그를 사용하세요
+    latest_post['url'] = url + latest_post_section.find('a')['href']
+    latest_post['thumbnail'] = latest_post_section.find('img')['src']
+    latest_post['title'] = latest_post_section.find('h4').text
+
     return latest_post
 
 def update_readme(post):
