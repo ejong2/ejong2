@@ -1,8 +1,8 @@
 name: Update README
 
-on:
+on: 
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   update:
