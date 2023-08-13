@@ -26,7 +26,7 @@ jobs:
     - name: Run update-readme.py
       working-directory: script
       run: |
-        python update-readme.py
+        python update_readme.py
     - name: Commit changes
       run: |
         git config --global user.name 'ejong2'
