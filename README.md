@@ -19,6 +19,8 @@
     <img src="https://img.shields.io/badge/PORTFOLIO-blue?&style=flat&logo=notion&logoColor=white" style="height : auto; margin-right : 2px;"/>
 </a>
 
+[//]: # (latest_post)
+
 ## 🌟 Technologies & Tools
 
 <img src="https://img.shields.io/badge/-C++-blue?style=flat&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-C%23%20-puple?style=flat&logo=C%20Sharp"/> <img src="https://img.shields.io/badge/Unreal%20Engine%20-%23313131.svg?&style=flat&logo=unreal%20engine&logoColor=white"/> <img src="https://img.shields.io/badge/Unity%20-%23000000.svg?&style=flat&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=OpenJDK&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Boot-green?style=flat&logo=spring-boot"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/> <img src="https://img.shields.io/badge/.NET%20Core-purple?style=flat&logo=.net"/>
