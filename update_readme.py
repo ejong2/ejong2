@@ -37,10 +37,13 @@ def update_readme(post):
 
     # 삽입할 블로그 포스트 내용 작성
     if post:  # 포스트가 있을 경우
+        thumbnail_tag = (
+            f"<img src='{post['thumbnail']}' alt='{post['title']}' width='150'/>\n" if 'thumbnail' in post else ""
+        )
         blog_post_content = (
             f"<div style='display: flex; align-items: center;'>\n"
             f"    <a href='{post['url']}'>\n"
-            f"        <img src='{post['thumbnail']}' alt='{post['title']}' width='150'/>\n"
+            f"        {thumbnail_tag}"
             f"    </a>\n"
             f"    <div style='margin-left: 20px;'>\n"
             f"        <a href='{post['url']}' style='text-decoration: none; color: black; font-size: 18px;'>{post['title']}</a>\n"
