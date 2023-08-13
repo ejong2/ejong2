@@ -68,3 +68,4 @@ def update_readme(post):
 
 latest_post = fetch_latest_post()
 update_readme(latest_post)
+
