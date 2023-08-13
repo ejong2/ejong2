@@ -33,13 +33,17 @@ def update_readme(post):
             break
 
     # 삽입할 블로그 포스트 내용 작성
-    blog_post_content = f"<a href='{post['url']}'>\n    <img src='{post['thumbnail']}' alt='{post['title']}'/>\n</a><br/>\n"
-    
+    if post:  # 포스트가 있을 경우
+        blog_post_content = f"<a href='{post['url']}'>\n    <img src='{post['thumbnail']}' alt='{post['title']}'/>\n</a><br/>\n"
+    else:  # 포스트가 없을 경우 대체할 내용
+        blog_post_content = "최신 블로그 포스트가 없습니다. 나중에 다시 확인해주세요!\n"
+
     # 삽입 위치에 블로그 포스트 내용 삽입
     content.insert(insert_index, blog_post_content)
 
     with open('README.md', 'w') as file:
         file.writelines(content)
+
 
 latest_post = fetch_latest_post()
 update_readme(latest_post)
