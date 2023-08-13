@@ -20,6 +20,9 @@
 </a>
 
 [//]: # (latest_post)
+<a href='https://velog.io/@enamu/Unity-강의-정리-3장-C-프로그래밍-기본'>
+    <img src='https://velog.velcdn.com/images/enamu/post/275fb876-b733-4d01-be88-12e5d1dc8588/image.png' alt='Unity 강의 정리 3장: C# 프로그래밍 : 기본🎮'/>
+</a><br/>
 
 ## 🌟 Technologies & Tools
 
