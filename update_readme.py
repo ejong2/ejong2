@@ -8,10 +8,16 @@ def fetch_latest_post():
 
     # 최신 포스트의 정보를 추출합니다.
     latest_post = {}
-    latest_post_section = soup.find('div', {'class': 'sc-12sw3o5-4'}) # 적절한 클래스나 태그를 사용하세요
-    latest_post['url'] = url + latest_post_section.find('a')['href']
-    latest_post['thumbnail'] = latest_post_section.find('img')['src']
-    latest_post['title'] = latest_post_section.find('h4').text
+    latest_post_section = soup.find('h1') # 최신 포스트의 제목을 담고 있는 h1 태그를 찾습니다.
+    latest_post['title'] = latest_post_section.text
+
+    # 최신 포스트의 URL을 찾습니다. URL은 h1 태그의 부모 div 태그 내의 a 태그의 href 속성에 있습니다.
+    latest_post_url_section = latest_post_section.find_parent('div').find('a', class_='sc-jQrDum')
+    latest_post['url'] = latest_post_url_section['href']
+
+    # 썸네일 이미지를 찾습니다. 이미지는 URL 섹션의 이전 div 태그 내에 있을 수 있습니다.
+    latest_post_thumbnail_section = latest_post_section.find_previous_sibling('div').find('img')
+    latest_post['thumbnail'] = latest_post_thumbnail_section['src']
 
     return latest_post
 
