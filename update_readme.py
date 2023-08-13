@@ -37,6 +37,7 @@ def update_readme(post):
             continue
         if insert_index and '<div style=' in line:
             end_index = idx
+            break
 
     if end_index:
         del content[insert_index:end_index+1]
