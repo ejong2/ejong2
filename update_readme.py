@@ -9,19 +9,20 @@ def fetch_latest_post():
     # 최신 포스트의 정보를 추출합니다.
     latest_post = {}
     latest_post_section = soup.find('h2')  # 최신 포스트의 제목을 담고 있는 h2 태그를 찾습니다.
-    latest_post['title'] = latest_post_section.text
+    if latest_post_section:
+        latest_post['title'] = latest_post_section.text
 
-    # 최신 포스트의 URL을 찾습니다. URL은 h2 태그의 부모 div 태그 내의 a 태그의 href 속성에 있습니다.
-    latest_post_url_section = latest_post_section.find_parent('div').find('a', href=True)
-    if latest_post_url_section:
-        latest_post['url'] = 'https://velog.io' + latest_post_url_section['href']
+        # 최신 포스트의 URL을 찾습니다.
+        latest_post_url_section = latest_post_section.find_parent('a', href=True)
+        if latest_post_url_section:
+            latest_post['url'] = 'https://velog.io' + latest_post_url_section['href']
 
-    # 썸네일 이미지를 찾습니다. 이미지는 URL 섹션의 이전 div 태그 내에 있을 수 있습니다.
-    latest_post_thumbnail_section = latest_post_section.find_previous_sibling('div').find('img')
-    if latest_post_thumbnail_section:
-        latest_post['thumbnail'] = latest_post_thumbnail_section['src']
+        # 썸네일 이미지를 찾습니다.
+        latest_post_thumbnail_section = latest_post_section.find_previous('div').find('img', src=True)
+        if latest_post_thumbnail_section:
+            latest_post['thumbnail'] = latest_post_thumbnail_section['src']
 
-    return latest_post
+        return latest_post
 
 def update_readme(post):
     with open('README.md', 'r') as file:
