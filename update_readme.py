@@ -29,18 +29,18 @@ def update_readme(post):
         content = file.readlines()
 
     # 블로그 포스트를 삽입할 위치 찾기 및 기존 포스트 제거
-    insert_index = None
+    start_index = None
     end_index = None
     for idx, line in enumerate(content):
         if '[//]: # (latest_post)' in line:
-            insert_index = idx + 1
+            start_index = idx + 1
             continue
-        if insert_index and '<div style=' in line:
+        if start_index and '</div><br/>' in line:
             end_index = idx
             break
 
-    if end_index:
-        del content[insert_index:end_index+1]
+    if start_index and end_index:
+        del content[start_index:end_index+1]
 
     # 삽입할 블로그 포스트 내용 작성
     if post:  # 포스트가 있을 경우
@@ -61,11 +61,10 @@ def update_readme(post):
         blog_post_content = "최신 블로그 포스트가 없습니다. 나중에 다시 확인해주세요!\n"
 
     # 삽입 위치에 블로그 포스트 내용 삽입
-    content.insert(insert_index, blog_post_content)
+    content.insert(start_index, blog_post_content)
 
     with open('README.md', 'w') as file:
         file.writelines(content)
 
 latest_post = fetch_latest_post()
 update_readme(latest_post)
-
