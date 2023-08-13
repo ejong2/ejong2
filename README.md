@@ -30,13 +30,6 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/test'>
-            </a>
-    <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/test' style='text-decoration: none; color: black; font-size: 18px;'>test</a>
-    </div>
-</div><br/>
-<div style='display: flex; align-items: center;'>
     <a href='https://velog.io/@enamu/Unity-강의-정리-3장-C-프로그래밍-기본'>
         <img src='https://velog.velcdn.com/images/enamu/post/275fb876-b733-4d01-be88-12e5d1dc8588/image.png' alt='Unity 강의 정리 3장: C# 프로그래밍 : 기본🎮' width='150'/>
     </a>
