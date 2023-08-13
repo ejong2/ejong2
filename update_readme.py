@@ -44,8 +44,5 @@ def update_readme(post):
     with open('README.md', 'w') as file:
         file.writelines(content)
 
-# 예시: 최신 포스트가 없을 경우 대체 내용 삽입
-update_readme()
-
 latest_post = fetch_latest_post()
 update_readme(latest_post)
