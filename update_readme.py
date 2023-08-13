@@ -30,14 +30,16 @@ def update_readme(post):
 
     # 블로그 포스트를 삽입할 위치 찾기 및 기존 포스트 제거
     insert_index = None
+    end_index = None
     for idx, line in enumerate(content):
         if '[//]: # (latest_post)' in line:
             insert_index = idx + 1
-            break
+            continue
+        if insert_index and '<div style=' in line:
+            end_index = idx
 
-    # 기존 블로그 포스트가 있다면 제거
-    while '<div style=' in content[insert_index]:
-        content.pop(insert_index)
+    if end_index:
+        del content[insert_index:end_index+1]
 
     # 삽입할 블로그 포스트 내용 작성
     if post:  # 포스트가 있을 경우
