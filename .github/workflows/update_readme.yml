@@ -7,6 +7,9 @@ on:
     branches: [ master ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  # 추가된 부분: 5분마다 워크플로우를 자동으로 실행합니다.
+  schedule: # <-- 이 부분이 추가됨
+    - cron: '*/5 * * * *' # <-- 이 부분이 추가됨
 
 jobs:
   build:
