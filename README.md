@@ -30,9 +30,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/test'>
-            </a>
+    <a href='https://velog.io/@enamu/Unity-강의-정리-4-2장-소코반-게임-만들기-플레이어-조작'>
+        <img src='https://velog.velcdn.com/images/enamu/post/4a0a8f36-244b-4734-9d64-2434717090bd/image.png' alt='Unity 강의 정리 4-2장: 소코반 게임 만들기 - 플레이어 조작 🎮' width='150'/>
+    </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/test' style='text-decoration: none; color: black; font-size: 18px;'>test</a>
+        <a href='https://velog.io/@enamu/Unity-강의-정리-4-2장-소코반-게임-만들기-플레이어-조작' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 4-2장: 소코반 게임 만들기 - 플레이어 조작 🎮</a>
     </div>
 </div><br/>
