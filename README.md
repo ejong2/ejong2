@@ -30,10 +30,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Github-Action을-활용한-블로그-포스팅-README로-가져오기'>
-        <img src='https://velog.velcdn.com/images/enamu/post/2ca2512a-298f-4c06-9a79-9a850d98291e/image.png' alt='Github Action을 활용한 블로그 포스팅 README로 가져오기 🚀' width='150'/>
+    <a href='https://velog.io/@enamu/Unity-강의-정리-4-1장-소코반-게임-만들기-초기-씬-구성'>
+        <img src='https://velog.velcdn.com/images/enamu/post/98dc8a00-a418-4270-9dba-cf0d866ab96c/image.png' alt='Unity 강의 정리 4-1장: 소코반 게임 만들기 - 초기 씬 구성 🎮' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Github-Action을-활용한-블로그-포스팅-README로-가져오기' style='text-decoration: none; color: black; font-size: 18px;'>Github Action을 활용한 블로그 포스팅 README로 가져오기 🚀</a>
+        <a href='https://velog.io/@enamu/Unity-강의-정리-4-1장-소코반-게임-만들기-초기-씬-구성' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 4-1장: 소코반 게임 만들기 - 초기 씬 구성 🎮</a>
     </div>
 </div><br/>
