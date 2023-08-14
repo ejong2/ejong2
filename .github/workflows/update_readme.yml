@@ -1,12 +1,13 @@
 name: Update readme
 
 on:
-  schedule:
+  schedule: # <-- 이 부분이 추가됨
     - cron: '0 0 * * *' # 매일 자정에 실행
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   
 jobs:
@@ -30,5 +31,5 @@ jobs:
         git config --global user.name 'ejong2'
         git config --global user.email 'nyamuniv@gmail.com'
         git add -A
-        git diff --staged --quiet || git commit -am "auto-update README.md"
-        git push origin $(git rev-parse --abbrev-ref HEAD) || true
+        git commit -am "auto-update README.md"
+        git push
