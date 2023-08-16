@@ -1,7 +1,6 @@
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fejong2&count_bg=%23FFC500&title_bg=%23555555&icon=diaspora.svg&icon_color=%23FFDD00&title=visitors&edge_flat=false)
 
-## 🌱 🌌 🐱 
-
+## :deciduous_tree: :milky_way: :octocat:
  나무랑 우주 고양이가 좋은 개발자 
 
 
