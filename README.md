@@ -30,10 +30,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Unity-강의-정리-4-3장-소코반-게임-만들기-레벨-디자인'>
-        <img src='https://velog.velcdn.com/images/enamu/post/94276973-fe36-49d1-b4ae-16fcd39b8f45/image.png' alt='Unity 강의 정리 4-3장: 소코반 게임 만들기 - 레벨 디자인 🎮' width='150'/>
+    <a href='https://velog.io/@enamu/Unity-강의-정리-4-4장-소코반-게임-만들기-충돌-처리'>
+        <img src='https://velog.velcdn.com/images/enamu/post/34b321e0-3917-4d98-aa4a-c8f219fcf8c5/image.png' alt='Unity 강의 정리 4-5장: 소코반 게임 만들기 - 충돌 처리🎮' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Unity-강의-정리-4-3장-소코반-게임-만들기-레벨-디자인' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 4-3장: 소코반 게임 만들기 - 레벨 디자인 🎮</a>
+        <a href='https://velog.io/@enamu/Unity-강의-정리-4-4장-소코반-게임-만들기-충돌-처리' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 4-5장: 소코반 게임 만들기 - 충돌 처리🎮</a>
     </div>
 </div><br/>
