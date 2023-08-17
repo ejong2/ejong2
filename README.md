@@ -29,10 +29,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Unity-강의-정리-4-4장-소코반-게임-만들기-충돌-처리'>
-        <img src='https://velog.velcdn.com/images/enamu/post/34b321e0-3917-4d98-aa4a-c8f219fcf8c5/image.png' alt='Unity 강의 정리 4-5장: 소코반 게임 만들기 - 충돌 처리🎮' width='150'/>
+    <a href='https://velog.io/@enamu/Unity-강의-정리-4-6장-소코반-게임-만들기-게임-매니저-승리-UI-최종-빌드'>
+        <img src='https://velog.velcdn.com/images/enamu/post/af81f454-9892-442c-8477-b7cf2ceef909/image.png' alt='Unity 강의 정리 4-6장: 소코반 게임 만들기 - 게임 매니저, 승리 UI, 최종 빌드🎮' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Unity-강의-정리-4-4장-소코반-게임-만들기-충돌-처리' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 4-5장: 소코반 게임 만들기 - 충돌 처리🎮</a>
+        <a href='https://velog.io/@enamu/Unity-강의-정리-4-6장-소코반-게임-만들기-게임-매니저-승리-UI-최종-빌드' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 4-6장: 소코반 게임 만들기 - 게임 매니저, 승리 UI, 최종 빌드🎮</a>
     </div>
 </div><br/>
