@@ -29,10 +29,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Unity-강의-정리-4-6장-소코반-게임-만들기-게임-매니저-승리-UI-최종-빌드'>
-        <img src='https://velog.velcdn.com/images/enamu/post/af81f454-9892-442c-8477-b7cf2ceef909/image.png' alt='Unity 강의 정리 4-6장: 소코반 게임 만들기 - 게임 매니저, 승리 UI, 최종 빌드🎮' width='150'/>
+    <a href='https://velog.io/@enamu/Unity-강의-정리-5-1장-C-프로그래밍-중급-12-평행이동과-좌표계-부모-자식-관계'>
+        <img src='https://velog.velcdn.com/images/enamu/post/60168327-0fae-46a4-a028-c6d40ad6ed52/image.png' alt='Unity 강의 정리 5-2장: C# 프로그래밍 [중급] (1/2) : 평행이동과 좌표계 + 부모 자식 관계🎮' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Unity-강의-정리-4-6장-소코반-게임-만들기-게임-매니저-승리-UI-최종-빌드' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 4-6장: 소코반 게임 만들기 - 게임 매니저, 승리 UI, 최종 빌드🎮</a>
+        <a href='https://velog.io/@enamu/Unity-강의-정리-5-1장-C-프로그래밍-중급-12-평행이동과-좌표계-부모-자식-관계' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 5-2장: C# 프로그래밍 [중급] (1/2) : 평행이동과 좌표계 + 부모 자식 관계🎮</a>
     </div>
 </div><br/>
