@@ -29,10 +29,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Unity-강의-정리-5-1장-C-프로그래밍-중급-12-평행이동과-좌표계-부모-자식-관계'>
-        <img src='https://velog.velcdn.com/images/enamu/post/60168327-0fae-46a4-a028-c6d40ad6ed52/image.png' alt='Unity 강의 정리 5-2장: C# 프로그래밍 [중급] (1/2) : 평행이동과 좌표계 + 부모 자식 관계🎮' width='150'/>
+    <a href='https://velog.io/@enamu/Unity-강의-정리-5-4장-C-프로그래밍-중급-12-Instantiate'>
+        <img src='https://velog.velcdn.com/images/enamu/post/21024702-ffe1-4353-b11a-332eb4850fd7/image.png' alt='Unity 강의 정리 5-4장: C# 프로그래밍 [중급] (1/2) : Instantiate🎮' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Unity-강의-정리-5-1장-C-프로그래밍-중급-12-평행이동과-좌표계-부모-자식-관계' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 5-2장: C# 프로그래밍 [중급] (1/2) : 평행이동과 좌표계 + 부모 자식 관계🎮</a>
+        <a href='https://velog.io/@enamu/Unity-강의-정리-5-4장-C-프로그래밍-중급-12-Instantiate' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 5-4장: C# 프로그래밍 [중급] (1/2) : Instantiate🎮</a>
     </div>
 </div><br/>
