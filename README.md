@@ -29,10 +29,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Unity-강의-정리-5-5장-C-프로그래밍-중급-12-Static'>
-        <img src='https://velog.velcdn.com/images/enamu/post/df44f968-43cf-47cb-a499-8d8378d743a4/image.png' alt='Unity 강의 정리 5-5장: C# 프로그래밍 [중급] (1/2) : Static🎮' width='150'/>
+    <a href='https://velog.io/@enamu/Unity-강의-정리-5-6장-C-프로그래밍-중급-12-List'>
+        <img src='https://velog.velcdn.com/images/enamu/post/d52e0c0a-83f0-492c-a04e-aba880da0e50/image.png' alt='Unity 강의 정리 5-6장: C# 프로그래밍 [중급] (1/2) : List🎮' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Unity-강의-정리-5-5장-C-프로그래밍-중급-12-Static' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 5-5장: C# 프로그래밍 [중급] (1/2) : Static🎮</a>
+        <a href='https://velog.io/@enamu/Unity-강의-정리-5-6장-C-프로그래밍-중급-12-List' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 5-6장: C# 프로그래밍 [중급] (1/2) : List🎮</a>
     </div>
 </div><br/>
