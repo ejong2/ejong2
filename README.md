@@ -29,10 +29,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Unity-강의-정리-5-7장-C-프로그래밍-중급-12-싱글톤'>
-        <img src='https://velog.velcdn.com/images/enamu/post/00902f53-3aec-4896-8da3-925e6aa921c0/image.png' alt='Unity 강의 정리 5-7장: C# 프로그래밍 [중급] (1/2) : 싱글톤🎮' width='150'/>
+    <a href='https://velog.io/@enamu/Unity-강의-정리-5-8장-C-프로그래밍-중급-12-코루틴'>
+        <img src='https://velog.velcdn.com/images/enamu/post/fbc1a402-44e5-4eb6-bf14-13ce917f81b2/image.png' alt='Unity 강의 정리 5-8장: C# 프로그래밍 [중급] (1/2) : 코루틴🎮' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Unity-강의-정리-5-7장-C-프로그래밍-중급-12-싱글톤' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 5-7장: C# 프로그래밍 [중급] (1/2) : 싱글톤🎮</a>
+        <a href='https://velog.io/@enamu/Unity-강의-정리-5-8장-C-프로그래밍-중급-12-코루틴' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 5-8장: C# 프로그래밍 [중급] (1/2) : 코루틴🎮</a>
     </div>
 </div><br/>
