@@ -29,10 +29,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Unity-강의-정리-6-2장-게임-제작-어메이징-볼링-프롭-데미지-시스템'>
-        <img src='https://velog.velcdn.com/images/enamu/post/67bc8832-8175-4cc6-82b5-30cecd734397/image.png' alt='Unity 강의 정리 6-2장: [게임 제작 : 어메이징 볼링] 프롭 + 데미지 시스템🎮' width='150'/>
+    <a href='https://velog.io/@enamu/백준-11866-Cpp-요세푸스-문제'>
+        <img src='https://velog.velcdn.com/images/enamu/post/6cd412bc-ca26-4059-8734-ebb677f0546e/image.png' alt='C++ 백준 1158 요세푸스 문제' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Unity-강의-정리-6-2장-게임-제작-어메이징-볼링-프롭-데미지-시스템' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 6-2장: [게임 제작 : 어메이징 볼링] 프롭 + 데미지 시스템🎮</a>
+        <a href='https://velog.io/@enamu/백준-11866-Cpp-요세푸스-문제' style='text-decoration: none; color: black; font-size: 18px;'>C++ 백준 1158 요세푸스 문제</a>
     </div>
 </div><br/>
