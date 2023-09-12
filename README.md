@@ -11,7 +11,7 @@
 </a><br/>
 
 <a href="https://velog.io/@enamu">
-    <img src="https://img.shields.io/badge/MY%20BLOG-yellow?&style=flat&logo=github&logoColor=black" style="height : auto; margin-right : 2px;"/>
+    <img src="https://img.shields.io/badge/BLOG-green?&style=flat&logo=velog&logoColor=white" style="height : auto; margin-right : 2px;"/>
 </a><br/>
 
 <a href="https://enamu-namu.notion.site/e145a27b8ee948659d157cc3b31c9717?pvs=4"> 
