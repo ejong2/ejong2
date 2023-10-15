@@ -1,4 +1,6 @@
-![DALL·E 2023-10-14 21 18 31 - 4K ultra high definition illustration in the style of Japanese animation, reminiscent of 'Sword Art Online'  A vast steampunk-infused forest unfolds w](https://github.com/ejong2/ejong2/assets/106827197/883956df-f491-4550-aa80-83a384279eab)
+<p align="center">
+  <img src="https://github.com/ejong2/ejong2/assets/106827197/78046db5-6436-4b85-83c7-07b745318d96" alt="UNIVERSE_GIT_CAT" width="100%" style="border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</p>
 
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fejong2&count_bg=%23FFC500&title_bg=%23555555&icon=diaspora.svg&icon_color=%23FFDD00&title=visitors&edge_flat=false)
 
