@@ -25,7 +25,9 @@
 
 ## 🌟 Technologies & Tools
 
-<img src="https://img.shields.io/badge/-C++-blue?style=flat&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-C%23%20-puple?style=flat&logo=C%20Sharp"/> <img src="https://img.shields.io/badge/Unreal%20Engine%20-%23313131.svg?&style=flat&logo=unreal%20engine&logoColor=white"/> <img src="https://img.shields.io/badge/Unity%20-%23000000.svg?&style=flat&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=OpenJDK&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Boot-green?style=flat&logo=spring-boot"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/> <img src="https://img.shields.io/badge/.NET%20Core-purple?style=flat&logo=.net"/>
+<img src="https://img.shields.io/badge/-C++-blue?style=flat&logo=c%2B%2B"/> <img src="https://img.shields.io/badge/-C%23%20-puple?style=flat&logo=C%20Sharp"/> <img src="https://img.shields.io/badge/Unreal%20Engine%20-%23313131.svg?&style=flat&logo=unreal%20engine&logoColor=white"/> <img src="https://img.shields.io/badge/Unity%20-%23000000.svg?&style=flat&logo=unity&logoColor=white"/> <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=OpenJDK&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Boot-green?style=flat&logo=spring-boot"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/> <img src="https://img.shields.io/badge/.NET%20Core-purple?style=flat&logo=.net"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white"/>
+<!-- 추가된 부분 끝 -->
+
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ejong2&show_icons=true&theme=radical)
 
