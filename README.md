@@ -35,10 +35,10 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/Unity-강의-정리-6-4장-게임-제작-어메이징-볼링-볼-슈터'>
-        <img src='https://velog.velcdn.com/images/enamu/post/33c34448-2bd2-4aca-9d00-31963e09849f/image.png' alt='Unity 강의 정리 6-4장: [게임 제작 : 어메이징 볼링] 볼 슈터 🎮' width='150'/>
+    <a href='https://velog.io/@enamu/정렬-알고리즘'>
+        <img src='https://velog.velcdn.com/images/enamu/post/bdf66e31-994d-40c3-bc61-5b0c9d904110/image.png' alt='정렬 알고리즘' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/Unity-강의-정리-6-4장-게임-제작-어메이징-볼링-볼-슈터' style='text-decoration: none; color: black; font-size: 18px;'>Unity 강의 정리 6-4장: [게임 제작 : 어메이징 볼링] 볼 슈터 🎮</a>
+        <a href='https://velog.io/@enamu/정렬-알고리즘' style='text-decoration: none; color: black; font-size: 18px;'>정렬 알고리즘</a>
     </div>
 </div><br/>
