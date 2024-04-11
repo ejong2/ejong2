@@ -34,13 +34,6 @@
 ## 📖 최신 블로그 보러가기
 
 [//]: # (latest_post)
-<div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/정렬-알고리즘'>
-        <img src='https://velog.velcdn.com/images/enamu/post/bdf66e31-994d-40c3-bc61-5b0c9d904110/image.png' alt='정렬 알고리즘' width='150'/>
-    </a>
-    <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/정렬-알고리즘' style='text-decoration: none; color: black; font-size: 18px;'>정렬 알고리즘</a>
-    </div>
-</div><br/>
+최신 블로그 포스트가 없습니다. 나중에 다시 확인해주세요!
 
 <!-- 안녕 2024년 ! -->
