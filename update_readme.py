@@ -1,60 +1,36 @@
 import requests
 from bs4 import BeautifulSoup
-import sys  # sys 모듈 추가
 
 def fetch_latest_post():
-    url = 'https://velog.io/@enamu/posts'
-    try:
-        response = requests.get(url)
-        # 웹 페이지 로드 실패 시 에러 처리
-        response.raise_for_status()
-    except requests.RequestException as e:
-        print(f"Request failed: {e}")
-        return None
+    url = 'https://velog.io/@enamu'
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
 
-    try:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        # 최신 포스트의 컨테이너 추출
-        posts_container = soup.find('div', class_='FlatPostCardList_block__VoFQe')
-        if not posts_container:
-            raise ValueError("Posts container not found")
+    # 최신 포스트의 정보를 추출합니다.
+    latest_post = {}
+    latest_post_section = soup.find('h2')  # 최신 포스트의 제목을 담고 있는 h2 태그를 찾습니다.
+    if latest_post_section:
+        latest_post['title'] = latest_post_section.text
 
-        # 최신 포스트의 세부 정보 추출
-        latest_post_card = posts_container.find('div', class_='FlatPostCard_block__a1qM7')
-        if not latest_post_card:
-            raise ValueError("Latest post not found")
+        # 최신 포스트의 URL을 찾습니다.
+        latest_post_url_section = latest_post_section.find_parent('a', href=True)
+        if latest_post_url_section:
+            latest_post['url'] = 'https://velog.io' + latest_post_url_section['href']
 
-        post_link = latest_post_card.find('a', class_='VLink_block__Uwj4P')['href']
-        post_title = latest_post_card.find('h2').text.strip()
-        post_thumbnail = latest_post_card.find('img', src=True)['src']
+        # 썸네일 이미지를 찾습니다.
+        latest_post_thumbnail_section = latest_post_section.find_previous('div').find('img', src=True)
+        if latest_post_thumbnail_section:
+            latest_post['thumbnail'] = latest_post_thumbnail_section['src']
 
-        return {
-            'url': post_link,
-            'title': post_title,
-            'thumbnail': post_thumbnail
-        }
-    except Exception as e:
-        print(f"Error parsing the webpage: {e}")
-        return None
-
-latest_post = fetch_latest_post()
-if latest_post:
-    print("Latest Post Details:")
-    print(f"Title: {latest_post['title']}")
-    print(f"URL: {latest_post['url']}")
-    print(f"Thumbnail: {latest_post['thumbnail']}")
-else:
-    print("Failed to fetch the latest blog post.")
+        return latest_post
 
 def update_readme(post):
-    if post is None:
-        # 변경된 부분: 에러 메시지를 README에 쓰는 대신, 에러 로그를 출력하고 프로그램 종료
-        sys.exit("Failed to fetch or parse the latest blog post. Exiting the script.")
-
     with open('README.md', 'r') as file:
         content = file.readlines()
 
-    start_index, end_index = None, None
+    # 블로그 포스트를 삽입할 위치 찾기 및 기존 포스트 제거
+    start_index = None
+    end_index = None
     for idx, line in enumerate(content):
         if '[//]: # (latest_post)' in line:
             start_index = idx + 1
@@ -63,20 +39,28 @@ def update_readme(post):
             end_index = idx
             break
 
-    if start_index is not None and end_index is not None:
+    if start_index and end_index:
         del content[start_index:end_index+1]
 
-    thumbnail_tag = f"<img src='{post['thumbnail']}' alt='{post['title']}' width='150'/>\n" if 'thumbnail' in post else ""
-    blog_post_content = (
-        f"<div style='display: flex; align-items: center;'>\n"
-        f"    <a href='{post['url']}'>\n"
-        f"        {thumbnail_tag}"
-        f"    </a>\n"
-        f"    <div style='margin-left: 20px;'>\n"
-        f"        <a href='{post['url']}' style='text-decoration: none; color: black; font-size: 18px;'>{post['title']}</a>\n"
-        f"    </div>\n"
-        f"</div><br/>\n"
-    )
+    # 삽입할 블로그 포스트 내용 작성
+    if post:  # 포스트가 있을 경우
+        thumbnail_tag = (
+            f"<img src='{post['thumbnail']}' alt='{post['title']}' width='150'/>\n" if 'thumbnail' in post else ""
+        )
+        blog_post_content = (
+            f"<div style='display: flex; align-items: center;'>\n"
+            f"    <a href='{post['url']}'>\n"
+            f"        {thumbnail_tag}"
+            f"    </a>\n"
+            f"    <div style='margin-left: 20px;'>\n"
+            f"        <a href='{post['url']}' style='text-decoration: none; color: black; font-size: 18px;'>{post['title']}</a>\n"
+            f"    </div>\n"
+            f"</div><br/>\n"
+        )
+    else:  # 포스트가 없을 경우 대체할 내용
+        blog_post_content = "최신 블로그 포스트가 없습니다. 나중에 다시 확인해주세요!\n"
+
+    # 삽입 위치에 블로그 포스트 내용 삽입
     content.insert(start_index, blog_post_content)
 
     with open('README.md', 'w') as file:
