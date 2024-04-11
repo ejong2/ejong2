@@ -6,6 +6,9 @@ from webdrivermanager import ChromeDriverManager
 import time
 
 def fetch_latest_post():
+    # ChromeDriverManager를 사용하여 ChromeDriver를 자동으로 다운로드하고 설치합니다.
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+    
     url = 'https://velog.io/@enamu/posts'
 
     # webdrivermanager를 사용하여 chromedriver 바이너리를 다운로드하고 설치합니다.
