@@ -6,23 +6,37 @@ def fetch_latest_post():
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # 최신 포스트의 정보를 추출합니다.
     latest_post = {}
-    latest_post_section = soup.find('h2')  # 최신 포스트의 제목을 담고 있는 h2 태그를 찾습니다.
+    # 웹 페이지 구조에 따른 수정된 선택자 사용
+    latest_post_section = soup.find('div', class_='FlatPostCard_block__a1qM7')
     if latest_post_section:
-        latest_post['title'] = latest_post_section.text.strip()
+        title_section = latest_post_section.find('h2')
+        if title_section:
+            latest_post['title'] = title_section.text.strip()
+        else:
+            print("Title not found")
+            return None
 
-        # 최신 포스트의 URL을 찾습니다. - 수정된 부분
-        latest_post_url_section = latest_post_section.find_parent('a', href=True)
-        if latest_post_url_section:
-            latest_post['url'] = latest_post_url_section['href']
+        # URL을 찾는 방식 수정
+        post_link = latest_post_section.find('a', class_='VLink_block__Uwj4P', href=True)
+        if post_link:
+            latest_post['url'] = post_link['href']
+        else:
+            print("Post URL not found")
+            return None
 
-        # 썸네일 이미지를 찾습니다. - 수정된 부분
-        latest_post_thumbnail_section = latest_post_section.find_parent('div').find('img', src=True)
-        if latest_post_thumbnail_section:
-            latest_post['thumbnail'] = latest_post_thumbnail_section['src']
+        # 썸네일 찾기
+        thumbnail_section = latest_post_section.find('img', src=True)
+        if thumbnail_section:
+            latest_post['thumbnail'] = thumbnail_section['src']
+        else:
+            print("Thumbnail not found")
+            return None
 
         return latest_post
+    else:
+        print("Latest post section not found")
+        return None
 
 def update_readme(post):
     with open('README.md', 'r') as file:
