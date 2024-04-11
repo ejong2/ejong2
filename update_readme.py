@@ -1,42 +1,28 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from webdrivermanager import ChromeDriverManager
+from webdriver_manager.chrome import ChromeDriverManager  # webdriver_manager 패키지로부터 올바르게 임포트합니다.
 import time
 
 def fetch_latest_post():
     url = 'https://velog.io/@enamu/posts'
 
-    # Use webdrivermanager to download and install the chromedriver binary.
-    cdm = ChromeDriverManager()
-    driver_path, driver_version = cdm.download_and_install()
+    # webdriver_manager를 사용하여 ChromeDriver를 자동으로 다운로드하고 경로를 가져옵니다.
+    # ChromeDriverManager().install()은 필요한 ChromeDriver를 다운로드하고, 설치된 드라이버의 경로를 반환합니다.
+    service = Service(ChromeDriverManager().install())
 
-    # Specify the correct path to your chromedriver.
-    service = Service(executable_path=driver_path)
-
-    # Use the Service object when creating the driver instance.
     driver = webdriver.Chrome(service=service)
     driver.get(url)
 
-    # Wait for the page to fully load.
     time.sleep(5)
 
-    # Create a BeautifulSoup object.
     soup = BeautifulSoup(driver.page_source, 'html.parser')
 
-    # Find the div tag with class 'FlatPostCard_block__a1qM7'.
     post_block = soup.find('div', class_='FlatPostCard_block__a1qM7')
-
-    # Extract the thumbnail image URL.
     thumbnail_url = post_block.find('img')['src']
-
-    # Extract the post title.
     title = post_block.find('h2').text
-
-    # Extract the post URL.
     post_url = post_block.find('a')['href']
 
-    # Close the WebDriver.
     driver.quit()
 
     return {'thumbnail': thumbnail_url, 'title': title, 'url': post_url}
@@ -59,7 +45,7 @@ def update_readme(post):
         del content[start_index:end_index+1]
 
     if post:
-        thumbnail_tag = f"<img src='{post['thumbnail']}' alt='{post['title']}' width='150'/>\n" if 'thumbnail' in post else ""
+        thumbnail_tag = f"<img src='{post['thumbnail']}' alt='{post['title']}' width='150'/>\n"
         blog_post_content = (
             f"<div style='display: flex; align-items: center;'>\n"
             f"    <a href='{post['url']}'>\n"
