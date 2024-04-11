@@ -9,7 +9,8 @@ def fetch_latest_post():
     url = 'https://velog.io/@enamu/posts'
 
     # webdrivermanager를 사용하여 chromedriver 바이너리를 다운로드하고 설치합니다.
-    cdm = ChromeDriverManager()
+    # ChromeDriverManager에 특정 버전의 ChromeDriver를 다운로드하도록 지시합니다.
+    cdm = ChromeDriverManager("123.0.6312.105")
     driver_path, driver_version = cdm.download_and_install()
 
     # chromedriver의 올바른 경로를 지정합니다.
