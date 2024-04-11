@@ -1,13 +1,18 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from webdrivermanager import ChromeDriverManager
 import time
 
 def fetch_latest_post():
     url = 'https://velog.io/@enamu/posts'
 
+    # Use webdrivermanager to download and install the chromedriver binary.
+    cdm = ChromeDriverManager()
+    cdm.download_and_install()
+
     # Specify the correct path to your chromedriver.
-    service = Service(executable_path='chromedriver')
+    service = Service(executable_path=cdm.driver_path)
 
     # Use the Service object when creating the driver instance.
     driver = webdriver.Chrome(service=service)
