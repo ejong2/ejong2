@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *' # 매일 자정에 실행
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
     - name: Setup ChromeDriver
       uses: nanasess/setup-chromedriver@master
       with:
-        chromedriver_version: 'latest'
+        chromedriver-version: 'latest'
     - name: Run update_readme.py
       run: python update_readme.py
     - name: Commit changes
