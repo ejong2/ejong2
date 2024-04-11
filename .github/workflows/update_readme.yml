@@ -24,6 +24,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
         pip install beautifulsoup4
+        pip install selenium
+    - name: Setup ChromeDriver
+      uses: nanasess/setup-chromedriver@master
+      with:
+        chromedriver_version: 'latest'
     - name: Run update_readme.py
       run: python update_readme.py
     - name: Commit changes
