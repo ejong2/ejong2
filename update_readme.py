@@ -10,15 +10,15 @@ def fetch_latest_post():
     latest_post = {}
     latest_post_section = soup.find('h2')  # 최신 포스트의 제목을 담고 있는 h2 태그를 찾습니다.
     if latest_post_section:
-        latest_post['title'] = latest_post_section.text
+        latest_post['title'] = latest_post_section.text.strip()
 
-        # 최신 포스트의 URL을 찾습니다.
+        # 최신 포스트의 URL을 찾습니다. - 수정된 부분
         latest_post_url_section = latest_post_section.find_parent('a', href=True)
         if latest_post_url_section:
-            latest_post['url'] = 'https://velog.io' + latest_post_url_section['href']
+            latest_post['url'] = latest_post_url_section['href']
 
-        # 썸네일 이미지를 찾습니다.
-        latest_post_thumbnail_section = latest_post_section.find_previous('div').find('img', src=True)
+        # 썸네일 이미지를 찾습니다. - 수정된 부분
+        latest_post_thumbnail_section = latest_post_section.find_parent('div').find('img', src=True)
         if latest_post_thumbnail_section:
             latest_post['thumbnail'] = latest_post_thumbnail_section['src']
 
