@@ -1,28 +1,47 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager  # webdriver_manager 패키지로부터 올바르게 임포트합니다.
+from selenium.webdriver.chrome.options import Options
+from webdrivermanager import ChromeDriverManager
 import time
 
 def fetch_latest_post():
     url = 'https://velog.io/@enamu/posts'
 
-    # webdriver_manager를 사용하여 ChromeDriver를 자동으로 다운로드하고 경로를 가져옵니다.
-    # ChromeDriverManager().install()은 필요한 ChromeDriver를 다운로드하고, 설치된 드라이버의 경로를 반환합니다.
-    service = Service(ChromeDriverManager().install())
+    # webdrivermanager를 사용하여 chromedriver 바이너리를 다운로드하고 설치합니다.
+    cdm = ChromeDriverManager()
+    driver_path, driver_version = cdm.download_and_install()
 
-    driver = webdriver.Chrome(service=service)
+    # chromedriver의 올바른 경로를 지정합니다.
+    service = Service(executable_path=driver_path)
+
+    # 헤드리스 모드에서 실행하도록 ChromeOptions를 설정합니다.
+    options = Options()
+    options.add_argument("--headless")
+
+    # 드라이버 인스턴스를 생성할 때 Service 객체와 ChromeOptions를 사용합니다.
+    driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
 
+    # 페이지가 완전히 로드될 때까지 기다립니다.
     time.sleep(5)
 
+    # BeautifulSoup 객체를 생성합니다.
     soup = BeautifulSoup(driver.page_source, 'html.parser')
 
+    # 'FlatPostCard_block__a1qM7' 클래스를 가진 div 태그를 찾습니다.
     post_block = soup.find('div', class_='FlatPostCard_block__a1qM7')
+
+    # 썸네일 이미지 URL을 추출합니다.
     thumbnail_url = post_block.find('img')['src']
+
+    # 게시글 제목을 추출합니다.
     title = post_block.find('h2').text
+
+    # 게시글 URL을 추출합니다.
     post_url = post_block.find('a')['href']
 
+    # WebDriver를 닫습니다.
     driver.quit()
 
     return {'thumbnail': thumbnail_url, 'title': title, 'url': post_url}
