@@ -34,6 +34,14 @@
 ## 📖 최신 블로그 보러가기
 
 [//]: # (latest_post)
+<div style='display: flex; align-items: center;'>
+    <a href='https://velog.io/@enamu/SQL-뷰view'>
+        <img src='https://velog.velcdn.com/images/enamu/post/3bbd68a8-b805-4b71-b371-beca53fd471d/image.png' alt='SQL 뷰(view)' width='150'/>
+    </a>
+    <div style='margin-left: 20px;'>
+        <a href='https://velog.io/@enamu/SQL-뷰view' style='text-decoration: none; color: black; font-size: 18px;'>SQL 뷰(view)</a>
+    </div>
+</div><br/>
 최신 블로그 포스트가 없습니다. 나중에 다시 확인해주세요!
 
 <!-- 안녕 2024년 ! -->
