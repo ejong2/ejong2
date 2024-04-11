@@ -1,34 +1,40 @@
-import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+import time
 
 def fetch_latest_post():
-    url = 'https://velog.io/@enamu'
-    response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    url = 'https://velog.io/@enamu/posts'
 
-    latest_post = {}
-    # 최신 포스트 리스트를 담고 있는 div 태그를 찾습니다.
-    post_list_section = soup.find('div', class_='FlatPostCardList_block__VoFQe')
-    if post_list_section:
-        # 리스트 내의 첫 번째 포스트를 찾습니다.
-        first_post_section = post_list_section.find('div', class_='FlatPostCard_block__a1qM7')
-        if first_post_section:
-            # 포스트의 URL을 찾습니다.
-            post_link = first_post_section.find('a', class_='VLink_block__Uwj4P', href=True)
-            if post_link:
-                latest_post['url'] = post_link['href']
+    # Specify the correct path to your chromedriver.
+    service = Service(executable_path=r'chromedriver')
 
-            # 포스트의 제목을 찾습니다.
-            post_title = post_link.find('h2')
-            if post_title:
-                latest_post['title'] = post_title.text.strip()
+    # Use the Service object when creating the driver instance.
+    driver = webdriver.Chrome(service=service)
+    driver.get(url)
 
-            # 썸네일 이미지를 찾습니다.
-            post_thumbnail = first_post_section.find('img', src=True)
-            if post_thumbnail:
-                latest_post['thumbnail'] = post_thumbnail['src']
+    # Wait for the page to fully load.
+    time.sleep(5)
 
-            return latest_post
+    # Create a BeautifulSoup object.
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+
+    # Find the div tag with class 'FlatPostCard_block__a1qM7'.
+    post_block = soup.find('div', class_='FlatPostCard_block__a1qM7')
+
+    # Extract the thumbnail image URL.
+    thumbnail_url = post_block.find('img')['src']
+
+    # Extract the post title.
+    title = post_block.find('h2').text
+
+    # Extract the post URL.
+    post_url = post_block.find('a')['href']
+
+    # Close the WebDriver.
+    driver.quit()
+
+    return {'thumbnail': thumbnail_url, 'title': title, 'url': post_url}
 
 def update_readme(post):
     with open('README.md', 'r') as file:
