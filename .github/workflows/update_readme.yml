@@ -26,6 +26,7 @@ jobs:
         pip install beautifulsoup4
         pip install selenium
         pip install webdrivermanager
+        pip install webdriver_manager
     - name: Run update_readme.py
       run: python update_readme.py
     - name: Commit changes
