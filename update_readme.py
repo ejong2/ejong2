@@ -6,29 +6,34 @@ def fetch_latest_post():
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # 최신 포스트의 정보를 추출합니다.
     latest_post = {}
-    latest_post_section = soup.find('h2')  # 최신 포스트의 제목을 담고 있는 h2 태그를 찾습니다.
-    if latest_post_section:
-        latest_post['title'] = latest_post_section.text
+    # 최신 포스트 리스트를 담고 있는 div 태그를 찾습니다.
+    post_list_section = soup.find('div', class_='FlatPostCardList_block__VoFQe')
+    if post_list_section:
+        # 리스트 내의 첫 번째 포스트를 찾습니다.
+        first_post_section = post_list_section.find('div', class_='FlatPostCard_block__a1qM7')
+        if first_post_section:
+            # 포스트의 URL을 찾습니다.
+            post_link = first_post_section.find('a', class_='VLink_block__Uwj4P', href=True)
+            if post_link:
+                latest_post['url'] = post_link['href']
 
-        # 최신 포스트의 URL을 찾습니다.
-        latest_post_url_section = latest_post_section.find_parent('a', href=True)
-        if latest_post_url_section:
-            latest_post['url'] = 'https://velog.io' + latest_post_url_section['href']
+            # 포스트의 제목을 찾습니다.
+            post_title = post_link.find('h2')
+            if post_title:
+                latest_post['title'] = post_title.text.strip()
 
-        # 썸네일 이미지를 찾습니다.
-        latest_post_thumbnail_section = latest_post_section.find_previous('div').find('img', src=True)
-        if latest_post_thumbnail_section:
-            latest_post['thumbnail'] = latest_post_thumbnail_section['src']
+            # 썸네일 이미지를 찾습니다.
+            post_thumbnail = first_post_section.find('img', src=True)
+            if post_thumbnail:
+                latest_post['thumbnail'] = post_thumbnail['src']
 
-        return latest_post
+            return latest_post
 
 def update_readme(post):
     with open('README.md', 'r') as file:
         content = file.readlines()
 
-    # 블로그 포스트를 삽입할 위치 찾기 및 기존 포스트 제거
     start_index = None
     end_index = None
     for idx, line in enumerate(content):
@@ -42,11 +47,8 @@ def update_readme(post):
     if start_index and end_index:
         del content[start_index:end_index+1]
 
-    # 삽입할 블로그 포스트 내용 작성
-    if post:  # 포스트가 있을 경우
-        thumbnail_tag = (
-            f"<img src='{post['thumbnail']}' alt='{post['title']}' width='150'/>\n" if 'thumbnail' in post else ""
-        )
+    if post:
+        thumbnail_tag = f"<img src='{post['thumbnail']}' alt='{post['title']}' width='150'/>\n" if 'thumbnail' in post else ""
         blog_post_content = (
             f"<div style='display: flex; align-items: center;'>\n"
             f"    <a href='{post['url']}'>\n"
@@ -57,10 +59,9 @@ def update_readme(post):
             f"    </div>\n"
             f"</div><br/>\n"
         )
-    else:  # 포스트가 없을 경우 대체할 내용
+    else:
         blog_post_content = "최신 블로그 포스트가 없습니다. 나중에 다시 확인해주세요!\n"
 
-    # 삽입 위치에 블로그 포스트 내용 삽입
     content.insert(start_index, blog_post_content)
 
     with open('README.md', 'w') as file:
