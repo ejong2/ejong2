@@ -42,6 +42,5 @@
         <a href='https://velog.io/@enamu/SQL-뷰view' style='text-decoration: none; color: black; font-size: 18px;'>SQL 뷰(view)</a>
     </div>
 </div><br/>
-최신 블로그 포스트가 없습니다. 나중에 다시 확인해주세요!
 
 <!-- 안녕 2024년 ! -->
