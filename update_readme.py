@@ -9,10 +9,10 @@ def fetch_latest_post():
 
     # Use webdrivermanager to download and install the chromedriver binary.
     cdm = ChromeDriverManager()
-    cdm.download_and_install()
+    driver_path, driver_version = cdm.download_and_install()
 
     # Specify the correct path to your chromedriver.
-    service = Service(executable_path=cdm.driver_path)
+    service = Service(executable_path=driver_path)
 
     # Use the Service object when creating the driver instance.
     driver = webdriver.Chrome(service=service)
