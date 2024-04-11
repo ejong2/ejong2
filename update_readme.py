@@ -7,7 +7,7 @@ def fetch_latest_post():
     url = 'https://velog.io/@enamu/posts'
 
     # Specify the correct path to your chromedriver.
-    service = Service(executable_path=r'chromedriver')
+    service = Service(executable_path='chromedriver')
 
     # Use the Service object when creating the driver instance.
     driver = webdriver.Chrome(service=service)
