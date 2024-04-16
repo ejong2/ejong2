@@ -18,10 +18,9 @@
     <img src="https://img.shields.io/badge/BLOG-green?&style=flat&logo=velog&logoColor=white" style="height : auto; margin-right : 2px;"/>
 </a><br/>
 
-<a href="https://enamu-namu.notion.site/e145a27b8ee948659d157cc3b31c9717?pvs=4"> 
+<a href="https://www.notion.so/enamu-namu/91717ea0439049eaa335832742f3008d?pvs=4"> 
     <img src="https://img.shields.io/badge/PORTFOLIO-blue?&style=flat&logo=notion&logoColor=white" style="height : auto; margin-right : 2px;"/>
 </a>
-
 
 ## 🌟 Technologies & Tools
 
