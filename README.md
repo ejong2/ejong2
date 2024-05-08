@@ -34,11 +34,11 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/SQL-뷰view'>
-        <img src='https://velog.velcdn.com/images/enamu/post/3bbd68a8-b805-4b71-b371-beca53fd471d/image.png' alt='SQL 뷰(view)' width='150'/>
+    <a href='https://velog.io/@enamu/네트워크-관리사-필기-정리-1'>
+        <img src='https://velog.velcdn.com/images/enamu/post/05f739b8-3b47-409b-89ed-0fad53f864ef/image.png' alt='네트워크 관리사 필기 정리  #1' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/SQL-뷰view' style='text-decoration: none; color: black; font-size: 18px;'>SQL 뷰(view)</a>
+        <a href='https://velog.io/@enamu/네트워크-관리사-필기-정리-1' style='text-decoration: none; color: black; font-size: 18px;'>네트워크 관리사 필기 정리  #1</a>
     </div>
 </div><br/>
 
