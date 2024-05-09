@@ -34,11 +34,11 @@
 
 [//]: # (latest_post)
 <div style='display: flex; align-items: center;'>
-    <a href='https://velog.io/@enamu/네트워크-관리사-필기-정리-1'>
-        <img src='https://velog.velcdn.com/images/enamu/post/05f739b8-3b47-409b-89ed-0fad53f864ef/image.png' alt='네트워크 관리사 필기 정리  #1' width='150'/>
+    <a href='https://velog.io/@enamu/네트워크-관리사-필기-정리-2'>
+        <img src='https://velog.velcdn.com/images/enamu/post/42352f9c-6e23-4d9c-a143-449dcc79d459/image.png' alt='네트워크 관리사 필기 정리 #2' width='150'/>
     </a>
     <div style='margin-left: 20px;'>
-        <a href='https://velog.io/@enamu/네트워크-관리사-필기-정리-1' style='text-decoration: none; color: black; font-size: 18px;'>네트워크 관리사 필기 정리  #1</a>
+        <a href='https://velog.io/@enamu/네트워크-관리사-필기-정리-2' style='text-decoration: none; color: black; font-size: 18px;'>네트워크 관리사 필기 정리 #2</a>
     </div>
 </div><br/>
 
